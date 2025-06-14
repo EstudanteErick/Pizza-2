@@ -4,45 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="imagens/style.css">
+    <link href="https://fonts.cdnfonts.com/css/michegar" rel="stylesheet">
     <title>Pizzaria</title>
 </head>
 <body>
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <img src="imagens/logo.png" alt="">
+                <img src="imagens/logo.png" alt="Logo da Pizzaria">
             </div>
 
             <div class="nav-list">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Home</a>
-                </li>
-
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a>
-                </li>
-
-                <li class="nav-item"><a href="#" class="nav-link">Menu</a>
-                </li>
-            </ul>
+                <ul>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                </ul>
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()">
-                    <img src="imagens/menu_white_36dp.svg" alt="">
+                <button onclick="menuShow()" aria-label="Menu">
+                    <img src="imagens/menu_white_36dp.svg" alt="Menu">
                 </button>
             </div>
         </nav>
 
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
             </ul>
         </div>
-
-
     </header>
+
+    <main id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="titulo">
+                    AS <br> MELHORES <br> 
+                    <span class="pizza-text">PIZZAS</span> DO <br> 
+                    <span class="brasil-text">BRASIL</span>
+                </h1>
+            </div>
+            <div class="hero-image">
+                <img class="pizza-grande" src="imagens/pizza-grande.png" alt="Pizza deliciosa">
+            </div>
+        </div>
+    </main>
+    <h1 class="historia">
+        Nossa Historia  
+    </h1>
+
+    <img src="imagens/papel-de-parede-para-pizzaria.png" alt="" class="loja">
+
+    <h3 class="texto">No coração de Campo Grande, a Fornalha Dourada era uma pizzaria humilde com um segredo: o Sr. Antônio, um pizzaiolo que transformava massa em arte. Ele aprendeu com sua avó italiana, focando na perfeição da massa – leve e crocante.
+        <br>
+        Um dia, um crítico gastronômico anônimo provou a pizza margherita do Sr. Antônio. Encantado com a explosão de sabor e a massa incomparável, o crítico publicou uma resenha elogiando a Fornalha Dourada.
+        <br>
+        De repente, a pizzaria explodiu em popularidade, com filas na porta. Mesmo com o sucesso, o Sr. Antônio nunca comprometeu a qualidade, mantendo o carinho em cada pizza. A Fornalha Dourada cresceu, com a família continuando o legado, mas a essência de paixão e a massa perfeita permaneceram. Hoje, é um tesouro em Campo Grande, onde cada fatia conta uma história de dedicação.</h3>
+
+        <h1 class="menu">
+            Menu de Sabores
+        </h1>
+        
+        <main>
+            <div class="card">
+                <div class="product-img">
+
+                </div>
+                <div class="produtc-infos">
+
+                </div>
+                <p class="name"></p>
+                <p class="description">
+                    
+                </p>
+            </div>
+        </main>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,10 +1,23 @@
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
+    
+    if (menuMobile.classList.contains('active')) {
+        menuMobile.classList.remove('active');
     } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
+        menuMobile.classList.add('active');
     }
 }
+
+// Fechar menu ao clicar em um link
+document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.mobile-menu').classList.remove('active');
+    });
+});
+
+// Fechar menu ao redimensionar a tela
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 991) {
+        document.querySelector('.mobile-menu').classList.remove('active');
+    }
+});
