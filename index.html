@@ -52,47 +52,97 @@
             </div>
         </div>
     </main>
-    <h1 class="historia">
-        Nossa Historia  
-    </h1>
 
-    <img src="imagens/papel-de-parede-para-pizzaria.png" alt="" class="loja">
+    <section id="sobre">
+        <h1 class="historia">
+            Nossa Historia  
+        </h1>
 
-    <h3 class="texto">No coração de Campo Grande, a Fornalha Dourada era uma pizzaria humilde com um segredo: o Sr. Antônio, um pizzaiolo que transformava massa em arte. Ele aprendeu com sua avó italiana, focando na perfeição da massa – leve e crocante.
-        <br>
-        Um dia, um crítico gastronômico anônimo provou a pizza margherita do Sr. Antônio. Encantado com a explosão de sabor e a massa incomparável, o crítico publicou uma resenha elogiando a Fornalha Dourada.
-        <br>
-        De repente, a pizzaria explodiu em popularidade, com filas na porta. Mesmo com o sucesso, o Sr. Antônio nunca comprometeu a qualidade, mantendo o carinho em cada pizza. A Fornalha Dourada cresceu, com a família continuando o legado, mas a essência de paixão e a massa perfeita permaneceram. Hoje, é um tesouro em Campo Grande, onde cada fatia conta uma história de dedicação.</h3>
+        <img src="imagens/papel-de-parede-para-pizzaria.png" alt="" class="loja">
 
-        <h1 class="menu">
+        <h3 class="texto">No coração de Campo Grande, a Fornalha Dourada era uma pizzaria humilde com um segredo: o Sr. Antônio, um pizzaiolo que transformava massa em arte. Ele aprendeu com sua avó italiana, focando na perfeição da massa – leve e crocante.
+            <br>
+            Um dia, um crítico gastronômico anônimo provou a pizza margherita do Sr. Antônio. Encantado com a explosão de sabor e a massa incomparável, o crítico publicou uma resenha elogiando a Fornalha Dourada.
+            <br>
+            De repente, a pizzaria explodiu em popularidade, com filas na porta. Mesmo com o sucesso, o Sr. Antônio nunca comprometeu a qualidade, mantendo o carinho em cada pizza. A Fornalha Dourada cresceu, com a família continuando o legado, mas a essência de paixão e a massa perfeita permaneceram. Hoje, é um tesouro em Campo Grande, onde cada fatia conta uma história de dedicação.</h3>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h1 class="menu-title">
             Menu de Sabores
         </h1>
         
-        <main>
-            <div class="card">
-                <div class="product-img">
-                    <img src="imagens/pizza-1-removebg-preview.png" alt="">
+        <div class="menu-container">
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="imagens/pizza-1-removebg-preview.png" alt="Pizza de Pepperoni">
                 </div>
-                <div class="produtc-infos">
-                <p class="name">Pizza de peperoni</p>
-                <p class="description">
-                    Uma pizza deliciosa com molho de tomate, queijo mussarela, pepperoni e orégano.
-                </p>
-                <div>
-                    <p class="weight">
-                        400g
+                <div class="pizza-info">
+                    <h3 class="pizza-name">Pizza de Pepperoni</h3>
+                    <p class="pizza-description">
+                        Uma pizza deliciosa com molho de tomate, queijo mussarela, pepperoni e orégano.
                     </p>
-                    <button class="ingredients">
-                        Adicionar ingredients
-                    </button>
-                </div>
-                <div>
-                    <button class="call-to-action">Adicionar no carrinho</button>
-                    <p class="price">R$ 67,42</p>
-                </div>
+                    <div class="pizza-details">
+                        <span class="pizza-weight">400g</span>
+                        <button class="ingredients-btn">
+                            Ver Ingredientes
+                        </button>
+                    </div>
+                    <div class="pizza-action">
+                        <span class="pizza-price">R$ 67,42</span>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
-        </main>
+
+            <!-- Adicione mais pizzas aqui -->
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="imagens/pizza-2-removebg-preview.png" alt="Pizza Margherita">
+                </div>
+                <div class="pizza-info">
+                    <h3 class="pizza-name">Pizza Margherita</h3>
+                    <p class="pizza-description">
+                        Pizza clássica italiana com molho de tomate, mussarela de búfala, manjericão fresco e azeite.
+                    </p>
+                    <div class="pizza-details">
+                        <span class="pizza-weight">380g</span>
+                        <button class="ingredients-btn">
+                            Ver Ingredientes
+                        </button>
+                    </div>
+                    <div class="pizza-action">
+                        <span class="pizza-price">R$ 59,90</span>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="imagens/pizza-3-removebg-preview.png" alt="Pizza Portuguesa">
+                </div>
+                <div class="pizza-info">
+                    <h3 class="pizza-name">Pizza Portuguesa</h3>
+                    <p class="pizza-description">
+                        Pizza tradicional com presunto, ovos, cebola, azeitonas, ervilha e queijo mussarela.
+                    </p>
+                    <div class="pizza-details">
+                        <span class="pizza-weight">450g</span>
+                        <button class="ingredients-btn">
+                            Ver Ingredientes
+                        </button>
+                    </div>
+                    <div class="pizza-action">
+                        <span class="pizza-price">R$ 72,50</span>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <h1 class="contato">Nosso Contato</h1>
     <script src="script.js"></script>
 </body>
 </html>
