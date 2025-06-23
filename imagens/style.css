@@ -386,6 +386,84 @@ header {
 
 .contato {
     text-align: center;
+    font-size: 39px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-in {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-txt::placeholder {
+    color: #aaa;
+}
+
+.contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-txt::placeholder {
+    color: #aaa;
+}
+
+.contact-form-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #f39820;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 /* Responsive Design */
@@ -489,6 +567,8 @@ header {
     .add-to-cart-btn {
         flex-shrink: 0;
     }
+
+    
 }
 
 /* Animações adicionais */
@@ -516,6 +596,20 @@ header {
 }
 
 /* MEDIA QUERIES RESPONSIVAS */
+
+@media (max-width: 767px) {
+    .contact-in {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: block;
+        flex-wrap: wrap;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px #666;
+    }
+}
 
 /* Telas Full HD e maiores (1920px+) */
 @media screen and (min-width: 1920px) {
@@ -614,6 +708,8 @@ header {
 
 /* Tablet Portrait (768px - 991px) */
 @media screen and (max-width: 991px) and (min-width: 768px) {
+
+    
     .mobile-menu-icon {
         display: block;
     }
@@ -676,6 +772,8 @@ header {
     .historia-text {
         padding: 1rem;
     }
+
+    
 }
 
 /* Mobile Large (481px - 767px) */
@@ -739,6 +837,8 @@ header {
     .historia-text {
         padding: 0.5rem;
     }
+
+    
 }
 
 /* Mobile Small (até 480px) */
