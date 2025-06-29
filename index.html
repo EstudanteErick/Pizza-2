@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizzaria Fornalha Dourada - As melhores pizzas do Brasil em Campo Grande">
+    <meta name="theme-color" content="#BB2F12">
+
+    <!-- Preload crítico -->
+    <link rel="preload" href="imagens/style.css" as="style">
+    <link href="https://fonts.cdnfonts.com/css/new-pizza" rel="stylesheet">
+    <link rel="preload" href="imagens/pizza-grande.png" as="image">
+
+    <!-- CSS otimizado -->
     <link rel="stylesheet" href="imagens/style.css">
-    <link href="https://fonts.cdnfonts.com/css/michegar" rel="stylesheet">
-    <title>Pizzaria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <title>Pizzaria Fornalha Dourada - As Melhores Pizzas do Brasil</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -42,40 +55,58 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="titulo">
-                    AS <br> MELHORES <br> 
-                    <span class="pizza-text">PIZZAS</span> DO <br> 
+                    AS MELHORES
+                    <span class="pizza-text">PIZZAS</span> DO
                     <span class="brasil-text">BRASIL</span>
                 </h1>
             </div>
             <div class="hero-image">
-                <img class="pizza-grande" src="imagens/pizza-grande.png" alt="Pizza deliciosa">
+                <img class="pizza-grande" src="imagens/pizza-grande.png" alt="Pizza deliciosa da Fornalha Dourada"
+                    loading="eager" width="500" height="500">
             </div>
         </div>
     </main>
 
-    <section id="sobre">
-        <h1 class="historia">
-            Nossa Historia  
-        </h1>
+    <section id="sobre" class="nossa-historia-section">
+        <h2 class="historia-titulo">
+            <span class="nossa-text">Nossa</span> <span class="historia-word">História</span>
+        </h2>
 
-        <img src="imagens/papel-de-parede-para-pizzaria.png" alt="" class="loja">
+        <div class="historia-content">
+            <div class="historia-image">
+                <img src="imagens/papel-de-parede-para-pizzaria.png"
+                    alt="Interior aconchegante da Pizzaria Fornalha Dourada" class="loja" loading="lazy" width="500"
+                    height="300">
+            </div>
 
-        <h3 class="texto">No coração de Campo Grande, a Fornalha Dourada era uma pizzaria humilde com um segredo: o Sr. Antônio, um pizzaiolo que transformava massa em arte. Ele aprendeu com sua avó italiana, focando na perfeição da massa – leve e crocante.
-            <br>
-            Um dia, um crítico gastronômico anônimo provou a pizza margherita do Sr. Antônio. Encantado com a explosão de sabor e a massa incomparável, o crítico publicou uma resenha elogiando a Fornalha Dourada.
-            <br>
-            De repente, a pizzaria explodiu em popularidade, com filas na porta. Mesmo com o sucesso, o Sr. Antônio nunca comprometeu a qualidade, mantendo o carinho em cada pizza. A Fornalha Dourada cresceu, com a família continuando o legado, mas a essência de paixão e a massa perfeita permaneceram. Hoje, é um tesouro em Campo Grande, onde cada fatia conta uma história de dedicação.</h3>
+            <div class="historia-text">
+                <p class="texto">No coração de Campo Grande, a Fornalha Dourada era uma pizzaria humilde com um segredo:
+                    o Sr. Antônio, um pizzaiolo que transformava massa em arte. Ele aprendeu com sua avó italiana,
+                    focando na perfeição da massa – leve e crocante.</p>
+
+                <p class="texto">Um dia, um crítico gastronômico anônimo provou a pizza margherita do Sr. Antônio.
+                    Encantado com a explosão de sabor e a massa incomparável, o crítico publicou uma resenha elogiando a
+                    Fornalha Dourada.</p>
+
+                <p class="texto">De repente, a pizzaria explodiu em popularidade, com filas na porta. Mesmo com o
+                    sucesso, o Sr. Antônio nunca comprometeu a qualidade, mantendo o carinho em cada pizza. A Fornalha
+                    Dourada cresceu, com a família continuando o legado, mas a essência de paixão e a massa perfeita
+                    permaneceram. Hoje, é um tesouro em Campo Grande, onde cada fatia conta uma história de dedicação.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="menu" class="menu-section">
         <h1 class="menu-title">
             Menu de Sabores
         </h1>
-        
+
         <div class="menu-container">
             <div class="pizza-card">
                 <div class="pizza-image">
-                    <img src="imagens/pizza-1-removebg-preview.png" alt="Pizza de Pepperoni">
+                    <img src="imagens/pizza-1-removebg-preview.png" alt="Pizza de Pepperoni com queijo mussarela"
+                        loading="lazy" width="200" height="200">
                 </div>
                 <div class="pizza-info">
                     <h3 class="pizza-name">Pizza de Pepperoni</h3>
@@ -98,7 +129,8 @@
             <!-- Adicione mais pizzas aqui -->
             <div class="pizza-card">
                 <div class="pizza-image">
-                    <img src="imagens/pizza-2-removebg-preview.png" alt="Pizza Margherita">
+                    <img src="imagens/pizza-2-removebg-preview.png" alt="Pizza Margherita com manjericão fresco"
+                        loading="lazy" width="200" height="200">
                 </div>
                 <div class="pizza-info">
                     <h3 class="pizza-name">Pizza Margherita</h3>
@@ -120,7 +152,8 @@
 
             <div class="pizza-card">
                 <div class="pizza-image">
-                    <img src="imagens/pizza-3-removebg-preview.png" alt="Pizza Portuguesa">
+                    <img src="imagens/pizza-3-removebg-preview.png" alt="Pizza Portuguesa com presunto e ovos"
+                        loading="lazy" width="200" height="200">
                 </div>
                 <div class="pizza-info">
                     <h3 class="pizza-name">Pizza Portuguesa</h3>
@@ -141,26 +174,114 @@
             </div>
         </div>
     </section>
-    
-    <h1 class="contato">Nosso Contato</h1>
-    <div class="contact-in">
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191551.7475643783!2d-54.89581849314452!3d-20.481817999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e68e88545d61%3A0x432e5e5d85f11c8!2sPizza%20Upper!5e1!3m2!1spt-BR!2sbr!4v1750636291503!5m2!1spt-BR!2sbr" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contact-form">
-        <h1>Contact-Us</h1>
-        
-        <form>
-            <input type="text" placeholder="Name" class="contact-form-txt">
 
-            <input type="text" placeholder="Email" class="contact-form-txt">
+    <section class="contato-section">
+        <h2 class="contato">Nosso Contato</h2>
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191551.7475643783!2d-54.89581849314452!3d-20.481817999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e68e88545d61%3A0x432e5e5d85f11c8!2sPizza%20Upper!5e1!3m2!1spt-BR!2sbr!4v1750636291503!5m2!1spt-BR!2sbr"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização da Pizzaria Fornalha Dourada"></iframe>
+            </div>
+            <div class="contact-form">
+                <h3>Entre em Contato</h3>
 
-            <textarea placeholder="Mensagem" class="contact-form-textarea"></textarea>
-
-            <input type="submit" placeholder="Submit" class="contact-form-btn">
-        </form>
+                <form>
+                    <input type="text" placeholder="Nome" class="contact-form-txt" required>
+                    <input type="email" placeholder="Email" class="contact-form-txt" required>
+                    <textarea placeholder="Mensagem" class="contact-form-textarea" required></textarea>
+                    <button type="submit" class="contact-form-btn">Enviar Mensagem</button>
+                </form>
             </div>
         </div>
-    <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div id="footer-contacts">
+                <h1>logo</h1>
+                <p>It's all about your dreams.</p>
+
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h1>Subscribe</h1>
+
+                <p>
+                    Enter your e-mail to get notified about our news solutions
+                </p>
+
+                <div class="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copywright">
+            &#169
+            2025 Site criado por Erick
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+
+    <!-- Fallback para FontAwesome -->
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </noscript>
 </body>
+
 </html>
